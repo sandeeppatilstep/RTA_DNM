@@ -4238,9 +4238,9 @@
     "restore": {
       "projectUniqueName": "RTA_FrameworkTemplate",
       "projectName": "RTA_FrameworkTemplate",
-      "projectPath": "F:\\RTA_Github\\RTA_DNM\\.local",
+      "projectPath": "F:\\RTA_Github\\RTA_DNM_\\.local",
       "packagesPath": "C:\\Users\\Jagannath\\.nuget\\packages\\",
-      "outputPath": "F:\\RTA_Github\\RTA_DNM\\.local"
+      "outputPath": "F:\\RTA_Github\\RTA_DNM_\\.local"
     },
     "frameworks": {
       "net461": {
