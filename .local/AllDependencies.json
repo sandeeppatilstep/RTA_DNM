@@ -4236,11 +4236,11 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "RTA_FrameworkTemplate",
-      "projectName": "RTA_FrameworkTemplate",
-      "projectPath": "F:\\RTA_Github\\RTA_DNM_\\.local",
+      "projectUniqueName": "RTA_DNM",
+      "projectName": "RTA_DNM",
+      "projectPath": "F:\\RTA_Github\\RTA_DNM\\.local",
       "packagesPath": "C:\\Users\\Jagannath\\.nuget\\packages\\",
-      "outputPath": "F:\\RTA_Github\\RTA_DNM_\\.local"
+      "outputPath": "F:\\RTA_Github\\RTA_DNM\\.local"
     },
     "frameworks": {
       "net461": {

@@ -1,6 +1,6 @@
 {
-  "name": "RTA_FrameworkTemplate",
-  "description": "RTA Framework Template",
+  "name": "RTA_DNM",
+  "description": "RTA For DNM",
   "main": "Main.xaml",
   "dependencies": {
     "ReporterForUiPath.Activities": "[2.0.0]",
