@@ -1,8 +1,9 @@
 {
-  "name": "RTA_DNM",
-  "description": "RTA For DNM",
+  "name": "RTA_FrameworkTemplate",
+  "description": "RTA Framework Template",
   "main": "Main.xaml",
   "dependencies": {
+    "ColorDetectorActivities": "[1.1.3]",
     "ReporterForUiPath.Activities": "[2.0.0]",
     "UiPath.Database.Activities": "[1.4.0]",
     "UiPath.Excel.Activities": "[2.10.4]",
