@@ -1,0 +1,12 @@
+﻿{
+  "Id": "k30_trMln0attfA48SqqEA",
+  "Reference": "puWw2u2oiUep1K1n9RITkA/k30_trMln0attfA48SqqEA",
+  "ParentRef": "puWw2u2oiUep1K1n9RITkA/63U1XpBaOUuSbutumLNO4A",
+  "Name": "Chrome: Data Notification Manager",
+  "Type": "Screen",
+  "Created": "2021-06-23T10:19:48.2048Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-06-23T10:19:48.2048Z"
+}

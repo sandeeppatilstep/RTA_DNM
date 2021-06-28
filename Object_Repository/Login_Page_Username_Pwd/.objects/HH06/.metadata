@@ -1,0 +1,12 @@
+﻿{
+  "Id": "HH069rPAYESLsck7PRAmow",
+  "Reference": "puWw2u2oiUep1K1n9RITkA/HH069rPAYESLsck7PRAmow",
+  "Name": "Data Notification Manager App - Login Page",
+  "Description": "Username, Password & Enter Button",
+  "Type": "App",
+  "Created": "2021-06-23T10:19:48.1658236Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-06-23T10:19:48.1658236Z"
+}

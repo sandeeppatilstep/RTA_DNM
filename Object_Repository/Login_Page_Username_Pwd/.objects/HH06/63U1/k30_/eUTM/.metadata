@@ -1,0 +1,13 @@
+﻿{
+  "Id": "eUTMsxKIaUWQkI-M87HTxQ",
+  "Reference": "puWw2u2oiUep1K1n9RITkA/eUTMsxKIaUWQkI-M87HTxQ",
+  "ParentRef": "puWw2u2oiUep1K1n9RITkA/k30_trMln0attfA48SqqEA",
+  "Name": "Enter",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2021-06-23T10:19:48.226786Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-06-23T10:19:48.226786Z"
+}

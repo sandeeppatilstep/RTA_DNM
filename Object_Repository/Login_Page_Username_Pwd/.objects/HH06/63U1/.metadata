@@ -1,0 +1,12 @@
+﻿{
+  "Id": "63U1XpBaOUuSbutumLNO4A",
+  "Reference": "puWw2u2oiUep1K1n9RITkA/63U1XpBaOUuSbutumLNO4A",
+  "ParentRef": "puWw2u2oiUep1K1n9RITkA/HH069rPAYESLsck7PRAmow",
+  "Name": "Login_01",
+  "Type": "AppVersion",
+  "Created": "2021-06-23T10:19:48.190808Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-06-23T10:19:48.190808Z"
+}
