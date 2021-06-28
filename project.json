@@ -1,6 +1,6 @@
 {
-  "name": "RTA_FrameworkTemplate",
-  "description": "RTA Framework Template",
+  "name": "RTA_DNM",
+  "description": "RTA DNM Application ",
   "main": "Main.xaml",
   "dependencies": {
     "ColorDetectorActivities": "[1.1.3]",
