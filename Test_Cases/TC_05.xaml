@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>944,7220</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>944,5761</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>RAM_Transaction_Template_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="57">
@@ -131,7 +131,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="954,7055" sap2010:WorkflowViewState.IdRef="Sequence_745">
+  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="954,5596" sap2010:WorkflowViewState.IdRef="Sequence_745">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ExpectedResult" />
       <Variable x:TypeArguments="s:DateTime" Name="dateTime_CaseStartTime" />
@@ -297,13 +297,13 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:FilterDataTable>
     </Sequence>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowCount]" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="912,6857" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowCount]" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="912,5398" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="878,6737" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="878,5278" sap2010:WorkflowViewState.IdRef="TryCatch_14">
             <TryCatch.Variables>
               <Variable x:TypeArguments="x:String" Name="str_StepNumber" />
               <Variable x:TypeArguments="x:String" Name="str_Steps" />
@@ -322,7 +322,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="840,6488" sap2010:WorkflowViewState.IdRef="Sequence_741">
+              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="840,5029" sap2010:WorkflowViewState.IdRef="Sequence_741">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="str_Expected_Result_Image" />
                   <Variable x:TypeArguments="x:String" Name="str_Expected_ResultPath" />
@@ -459,7 +459,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ra:LogMessage>
-                <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Add Steps navigation. Add a case in switch for new step where str_StepNumber contains the Step number." DisplayName="Switch" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="798,3226" sap2010:WorkflowViewState.IdRef="Switch`1_5">
+                <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Add Steps navigation. Add a case in switch for new step where str_StepNumber contains the Step number." DisplayName="Switch" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="798,1767" sap2010:WorkflowViewState.IdRef="Switch`1_5">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -620,7 +620,7 @@
                           </scg:List>
                         </ui:MultipleAssign.AssignOperations>
                       </ui:MultipleAssign>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="674,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_8" WaitVisible="True">
+                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element - connected to server" sap:VirtualizedContainerService.HintSize="674,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_8" WaitVisible="True">
                         <ui:WaitUiElementAppear.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f6719137-357a-4d7f-98d0-1ecd91c739a5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*Connected*To*Server*' tag='BUTTON' /&gt;&quot;, BrowserAppName)]" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
@@ -672,7 +672,7 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="674,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2" WaitVisible="True">
+                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element - View All Button" sap:VirtualizedContainerService.HintSize="674,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2" WaitVisible="True">
                         <ui:WaitUiElementAppear.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*View*All' tag='BUTTON' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000">
                             <ui:Target.WaitForReady>
@@ -816,7 +816,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ra:LogMessage>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitVisible="True">
+                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" DisplayName="Find Element Client Email Review" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_1" WaitVisible="True">
                         <ui:WaitUiElementAppear.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="062b1f23-7b92-40a0-b395-bf69a0b11ae0" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*Client Email Review*' /&gt;&quot;, BrowserAppName)]" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
@@ -825,7 +825,7 @@
                           </ui:Target>
                         </ui:WaitUiElementAppear.Target>
                       </ui:WaitUiElementAppear>
-                      <ui:Hover CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Hover_1">
+                      <ui:Hover CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateHover="{x:Null}" DisplayName="Hover Element Email Review" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Hover_1">
                         <ui:Hover.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -866,13 +866,9 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3" WaitVisible="True">
+                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element - DN" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_3" WaitVisible="True">
                         <ui:WaitUiElementAppear.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000">
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000" WaitForReady="COMPLETE" />
                         </ui:WaitUiElementAppear.Target>
                       </ui:WaitUiElementAppear>
                     </Sequence>
@@ -1022,23 +1018,16 @@
                           </ui:CursorPosition>
                         </ui:Click.CursorPosition>
                         <ui:Click.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad8b3784-34bc-4386-b20c-3fae3409064d" InformativeScreenshot="bcd4aa5a72bb0cd2e07d82d55579152a" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl tag='A' aaname='*Bi-Weekly*' /&gt;&quot;, BrowserAppName)]">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad8b3784-34bc-4386-b20c-3fae3409064d" InformativeScreenshot="bcd4aa5a72bb0cd2e07d82d55579152a" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl tag='A' aaname='*Bi-Weekly*' /&gt;&quot;, BrowserAppName)]" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4" WaitVisible="True">
+                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element - DN" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_4" WaitVisible="True">
                         <ui:WaitUiElementAppear.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000">
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000" WaitForReady="COMPLETE" />
                         </ui:WaitUiElementAppear.Target>
                       </ui:WaitUiElementAppear>
                     </Sequence>
@@ -1194,23 +1183,16 @@
                             </ui:CursorPosition>
                           </ui:Click.CursorPosition>
                           <ui:Click.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad8b3784-34bc-4386-b20c-3fae3409064d" InformativeScreenshot="bcd4aa5a72bb0cd2e07d82d55579152a" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl tag='A' aaname='*Monthly*' /&gt;&quot;, BrowserAppName)]">
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad8b3784-34bc-4386-b20c-3fae3409064d" InformativeScreenshot="bcd4aa5a72bb0cd2e07d82d55579152a" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl tag='A' aaname='*Monthly*' /&gt;&quot;, BrowserAppName)]" WaitForReady="COMPLETE">
                               <ui:Target.TimeoutMS>
                                 <InArgument x:TypeArguments="x:Int32" />
                               </ui:Target.TimeoutMS>
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
                             </ui:Target>
                           </ui:Click.Target>
                         </ui:Click>
-                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_5" WaitVisible="True">
+                        <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element- DN" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_5" WaitVisible="True">
                           <ui:WaitUiElementAppear.Target>
-                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000">
-                              <ui:Target.WaitForReady>
-                                <InArgument x:TypeArguments="ui:WaitForReady" />
-                              </ui:Target.WaitForReady>
-                            </ui:Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000" WaitForReady="COMPLETE" />
                           </ui:WaitUiElementAppear.Target>
                         </ui:WaitUiElementAppear>
                       </Sequence>
@@ -1368,13 +1350,9 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_6" WaitVisible="True">
+                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element - DN" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_6" WaitVisible="True">
                         <ui:WaitUiElementAppear.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000">
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000" WaitForReady="COMPLETE" />
                         </ui:WaitUiElementAppear.Target>
                       </ui:WaitUiElementAppear>
                     </Sequence>
@@ -1531,13 +1509,9 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_7" WaitVisible="True">
+                      <ui:WaitUiElementAppear FoundElement="{x:Null}" WaitActive="{x:Null}" ContinueOnError="True" DisplayName="Find Element - DN" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_7" WaitVisible="True">
                         <ui:WaitUiElementAppear.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000">
-                            <ui:Target.WaitForReady>
-                              <InArgument x:TypeArguments="ui:WaitForReady" />
-                            </ui:Target.WaitForReady>
-                          </ui:Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8a8b3138-1416-4ec8-b0db-b7ef820073c5" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='*DN*' tag='SPAN' /&gt;&quot;, BrowserAppName)]" TimeoutMS="15000" WaitForReady="COMPLETE" />
                         </ui:WaitUiElementAppear.Target>
                       </ui:WaitUiElementAppear>
                     </Sequence>
@@ -1644,10 +1618,10 @@
                       </If>
                     </Sequence>
                   </Sequence>
-                  <Sequence x:Key="Step-7" DisplayName="Step 7" sap:VirtualizedContainerService.HintSize="737,66" sap2010:WorkflowViewState.IdRef="Sequence_836">
+                  <Sequence x:Key="Step-7" DisplayName="Step 7" sap:VirtualizedContainerService.HintSize="737,1420" sap2010:WorkflowViewState.IdRef="Sequence_836">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
