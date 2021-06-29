@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-16"?>
-<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="7GnwZms7mE-m3IYQcLpyxg" Selector="&lt;html app='chrome.exe' /&gt;" Url="https://uat.dnm.westhighland.net/login?redirect=%2F%3Fnull" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="IconBase64" xmlns="">0Vq-XESlvyka3c1ZIqYLdEg</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="6dd65885adcb3e67c38c9df1ac1c6329.png" xmlns="">0OHJAAcLUUUqXIt6HJRfCxA</imageRef>
-</TargetApp>
