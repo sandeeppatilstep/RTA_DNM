@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uat.dnm.westhighland.net/login?redirect=%2F%3Fnull" ContentHash="8nctiipjiEeTfvO72RmNaA" DesignTimeRectangle="928, 679, 63, 21" ElementType="Text" FriendlyName="'Enter'" FullSelectorArgument="&lt;webctrl aaname='Enter' parentid='app' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Enter' tag='SPAN' check:text='Enter' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Notification Manager' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="918, 667, 83, 45" ElementType="Button" FriendlyName="'Enter'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Enter' check:text='Enter' /&gt;" SearchSteps="FuzzySelector, Image">
+        <imageRef attrName="ImageBase64" xmlns="">1dKBuWmzRdkW0O-43nRQWYw</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0gy0MMHmHX0CNX482RVeteA</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="77a269e4d4e8de02173c7e1367fad5a3.png" xmlns="">09gbjptkg20eKNT5gAOWncw</imageRef>
+</TargetAnchorable>

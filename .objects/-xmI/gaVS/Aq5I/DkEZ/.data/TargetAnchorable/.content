@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://uat.dnm.westhighland.net/login?redirect=%2F%3Fnull" ContentHash="IXKXEj65CEKmBEj8_rFxWw" DesignTimeRectangle="682, 534, 400, 40" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='password' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='password' aaname='Password' /&gt;" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Notification Manager' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="682, 512, 66, 19" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;webctrl parentid='passwordField' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='passwordField' tag='LABEL' type='' aaname='Password' check:text='Password' /&gt;" SearchSteps="FuzzySelector, Image">
+        <imageRef attrName="ImageBase64" xmlns="">1cEsN3Aba20KvHlu4e9ClEA</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="ImageBase64" xmlns="">0gD4iamdHBk2T48hoTiYvdQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="40faff2d1ae1d47ac6c92ac1b382711d.png" xmlns="">0_082KdLLDUiTu5tPv1GLiA</imageRef>
+</TargetAnchorable>

@@ -1,0 +1,16 @@
+﻿{
+  "Id": "Aq5ICssghkSBOjfbDnYx4w",
+  "Reference": "cgF5bcOlqEKYm7xojU5K8g/Aq5ICssghkSBOjfbDnYx4w",
+  "ParentRef": "cgF5bcOlqEKYm7xojU5K8g/gaVSnD23wUmk86Y9ItbcpQ",
+  "Name": "DNM Home Page",
+  "Description": "In this page we type in User Name, Password & Click on Enter Button",
+  "Type": "Screen",
+  "Created": "2021-07-02T08:06:37.4833525Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-07-02T08:10:04.1436194Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=21.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
