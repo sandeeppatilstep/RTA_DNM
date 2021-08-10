@@ -4264,15 +4264,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jagannath\\.nuget\\packages\\": {}
+    "C:\\Users\\STEP\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "RTA_DNM",
       "projectName": "RTA_DNM",
-      "projectPath": "F:\\RTA_Github\\RTA_DNM\\.local",
-      "packagesPath": "C:\\Users\\Jagannath\\.nuget\\packages\\",
-      "outputPath": "F:\\RTA_Github\\RTA_DNM\\.local"
+      "projectPath": "D:\\RTA\\RTA_DNM_Github\\.local",
+      "packagesPath": "C:\\Users\\STEP\\.nuget\\packages\\",
+      "outputPath": "D:\\RTA\\RTA_DNM_Github\\.local"
     },
     "frameworks": {
       "net461": {
@@ -4308,7 +4308,7 @@
             "version": "[21.4.3, 21.4.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Jagannath\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\STEP\\AppData\\Local\\UiPath\\app-21.4.4\\runtime.json"
       }
     }
   }

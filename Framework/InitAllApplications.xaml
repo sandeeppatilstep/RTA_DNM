@@ -9,10 +9,10 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1428,2131</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1323,1715</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Initialization_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="36">
+    <scg:List x:TypeArguments="x:String" Capacity="72">
       <x:String>System.Activities.XamlIntegration</x:String>
       <x:String>System.Activities.Validation</x:String>
       <x:String>System.Activities</x:String>
@@ -49,6 +49,7 @@
       <x:String>ReporterForUiPath.Activities</x:String>
       <x:String>UiPath.Shared.Activities</x:String>
       <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -88,18 +89,19 @@
       <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
       <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="1084,1860" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap2010:Annotation.AnnotationText="Open applications used in the process and do necessary initialization procedures (e.g., login)." DisplayName="Initialize All Applications" sap:VirtualizedContainerService.HintSize="917,1650" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="1042,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
-    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="1042,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[in_Config(&quot;Log_Table_Template&quot;).ToString.Trim]" />
-    <If Condition="[File.Exists(in_Config(&quot;Log_Table_Template&quot;).ToString.Trim)]" DisplayName="To Check Log Template File Exists" sap:VirtualizedContainerService.HintSize="1042,51" sap2010:WorkflowViewState.IdRef="If_3">
+    <ui:LogMessage DisplayName="Log message (Initialize applications)" sap:VirtualizedContainerService.HintSize="875,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;Opening applications...&quot;]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="875,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[in_Config(&quot;Log_Table_Template&quot;).ToString.Trim]" />
+    <If Condition="[File.Exists(in_Config(&quot;Log_Table_Template&quot;).ToString.Trim)]" DisplayName="To Check Log Template File Exists" sap:VirtualizedContainerService.HintSize="875,51" sap2010:WorkflowViewState.IdRef="If_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -151,17 +153,17 @@
         <Throw DisplayName="Throw Log Template File Does Not Exists" Exception="[New System.IO.FileNotFoundException(&quot;Log template file does not exists.&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
       </If.Else>
     </If>
-    <Sequence DisplayName="Retrive Log No" sap:VirtualizedContainerService.HintSize="1042,66" sap2010:WorkflowViewState.IdRef="Sequence_13">
+    <Sequence DisplayName="Retrive Log No" sap:VirtualizedContainerService.HintSize="875,1098" sap2010:WorkflowViewState.IdRef="Sequence_13">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="str_FinalOutputPath" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign DisplayName="Assign Output Log File Path" sap:VirtualizedContainerService.HintSize="683,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign DisplayName="Assign Output Log File Path" sap:VirtualizedContainerService.HintSize="833,60" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[str_FinalOutputPath]</OutArgument>
         </Assign.To>
@@ -169,9 +171,9 @@
           <InArgument x:TypeArguments="x:String">[in_Config("Output_Path").ToString+"\"+Now.ToString("dd-MMM-yyyy")+"\"+"Log_Table_"+Now.ToString("dd-MM-yyyy")+".xlsx"]</InArgument>
         </Assign.Value>
       </Assign>
-      <If Condition="[File.Exists(str_FinalOutputPath)]" DisplayName="To Check Output Log File Path Exists" sap:VirtualizedContainerService.HintSize="683,437" sap2010:WorkflowViewState.IdRef="If_4">
+      <If Condition="[File.Exists(str_FinalOutputPath)]" DisplayName="To Check Output Log File Path Exists" sap:VirtualizedContainerService.HintSize="833,906" sap2010:WorkflowViewState.IdRef="If_4">
         <If.Then>
-          <Sequence sap:VirtualizedContainerService.HintSize="376,279" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence sap:VirtualizedContainerService.HintSize="526,748" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Name="dtExcelLogNo" />
             </Sequence.Variables>
@@ -181,8 +183,8 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtExcelLogNo]" DisplayName="Read Range Output File" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="Sheet1" WorkbookPath="[str_FinalOutputPath]" />
-            <Assign DisplayName="Assign Log Number" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtExcelLogNo]" DisplayName="Read Range Output File" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="ReadRange_3" SheetName="Sheet1" WorkbookPath="[str_FinalOutputPath]" />
+            <Assign DisplayName="Assign Log Number" sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">[out_LogNumber]</OutArgument>
               </Assign.To>
@@ -190,6 +192,33 @@
                 <InArgument x:TypeArguments="x:Int32">[CInt(dtExcelLogNo.Rows(dtExcelLogNo.Rows.Count-1).Item("Log_No").ToString.Trim)+1]</InArgument>
               </Assign.Value>
             </Assign>
+            <If Condition="[in_Config(&quot;IterationNumber&quot;).ToString&lt;&gt;&quot;&quot;]" sap:VirtualizedContainerService.HintSize="484,429" sap2010:WorkflowViewState.IdRef="If_5">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign DisplayName="Assign Log Number" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[out_LogNumber]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[Cint(in_Config("IterationNumber").ToString)]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Object">[in_Config("ExcelLogNo")]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Object">[out_LogNumber]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+            </If>
           </Sequence>
         </If.Then>
         <If.Else>
@@ -204,10 +233,10 @@
         </If.Else>
       </If>
     </Sequence>
-    <Sequence DisplayName="Prepare Input Data" sap:VirtualizedContainerService.HintSize="1042,1308" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence DisplayName="Prepare Input Data" sap:VirtualizedContainerService.HintSize="875,66" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
