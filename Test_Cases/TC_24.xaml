@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>923,7360</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>923,5006</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>RAM_Transaction_Template_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="59">
@@ -134,7 +134,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="933,7195" sap2010:WorkflowViewState.IdRef="Sequence_745">
+  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="933,4841" sap2010:WorkflowViewState.IdRef="Sequence_745">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ExpectedResult" />
       <Variable x:TypeArguments="s:DateTime" Name="dateTime_CaseStartTime" />
@@ -325,13 +325,13 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:FilterDataTable>
     </Sequence>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowCount]" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="891,5932" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowCount]" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="891,3578" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="857,5812" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="857,3458" sap2010:WorkflowViewState.IdRef="TryCatch_14">
             <TryCatch.Variables>
               <Variable x:TypeArguments="x:String" Name="str_StepNumber" />
               <Variable x:TypeArguments="x:String" Name="str_Steps" />
@@ -350,7 +350,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="819,5563" sap2010:WorkflowViewState.IdRef="Sequence_741">
+              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="819,3209" sap2010:WorkflowViewState.IdRef="Sequence_741">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="str_Expected_Result_Image" />
                   <Variable x:TypeArguments="x:String" Name="str_Expected_ResultPath" />
@@ -508,15 +508,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ra:LogMessage>
-                <Assign sap:VirtualizedContainerService.HintSize="777,60" sap2010:WorkflowViewState.IdRef="Assign_978">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:String">[BrowserAppName]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:String">chrome.exe</InArgument>
-                  </Assign.Value>
-                </Assign>
-                <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Add Steps navigation. Add a case in switch for new step where str_StepNumber contains the Step number." DisplayName="Switch" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="777,3150" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+                <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Add Steps navigation. Add a case in switch for new step where str_StepNumber contains the Step number." DisplayName="Switch" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="777,896" sap2010:WorkflowViewState.IdRef="Switch`1_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -524,7 +516,7 @@
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence x:Key="Step-1" DisplayName="Step login" sap:VirtualizedContainerService.HintSize="1026,3139" sap2010:WorkflowViewState.IdRef="Sequence_1442">
+                  <Sequence x:Key="Step-1" DisplayName="Step login" sap:VirtualizedContainerService.HintSize="1026,3170" sap2010:WorkflowViewState.IdRef="Sequence_1442">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>

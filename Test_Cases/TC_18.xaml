@@ -15,7 +15,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>923,5541</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>923,5604</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>RAM_Transaction_Template_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="59">
@@ -134,7 +134,7 @@
       <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="933,5376" sap2010:WorkflowViewState.IdRef="Sequence_745">
+  <Sequence DisplayName="RTA_TestCase_Template" sap:VirtualizedContainerService.HintSize="933,5439" sap2010:WorkflowViewState.IdRef="Sequence_745">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="ExpectedResult" />
       <Variable x:TypeArguments="s:DateTime" Name="dateTime_CaseStartTime" />
@@ -303,13 +303,13 @@
         </sap:WorkflowViewStateService.ViewState>
       </ui:FilterDataTable>
     </Sequence>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowCount]" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="891,4113" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[int_RowCount]" DataTable="[dt_FilteredTestData]" DisplayName="For Each Row To Execute Each Step" sap:VirtualizedContainerService.HintSize="891,4176" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
           </ActivityAction.Argument>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="857,3993" sap2010:WorkflowViewState.IdRef="TryCatch_14">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="857,4056" sap2010:WorkflowViewState.IdRef="TryCatch_14">
             <TryCatch.Variables>
               <Variable x:TypeArguments="x:String" Name="str_StepNumber" />
               <Variable x:TypeArguments="x:String" Name="str_Steps" />
@@ -328,7 +328,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="819,3744" sap2010:WorkflowViewState.IdRef="Sequence_741">
+              <Sequence DisplayName="For Each Sequence" sap:VirtualizedContainerService.HintSize="819,3807" sap2010:WorkflowViewState.IdRef="Sequence_741">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="str_Expected_Result_Image" />
                   <Variable x:TypeArguments="x:String" Name="str_Expected_ResultPath" />
@@ -469,7 +469,7 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ra:LogMessage>
-                <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Add Steps navigation. Add a case in switch for new step where str_StepNumber contains the Step number." DisplayName="Switch" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="777,2486" sap2010:WorkflowViewState.IdRef="Switch`1_6">
+                <Switch x:TypeArguments="x:String" sap2010:Annotation.AnnotationText="Add Steps navigation. Add a case in switch for new step where str_StepNumber contains the Step number." DisplayName="Switch" Expression="[str_StepNumber]" sap:VirtualizedContainerService.HintSize="777,2549" sap2010:WorkflowViewState.IdRef="Switch`1_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -813,7 +813,7 @@
                       </If>
                     </Sequence>
                   </Sequence>
-                  <Sequence x:Key="Step-2" DisplayName="Click On View All Button" sap:VirtualizedContainerService.HintSize="418,901" sap2010:WorkflowViewState.IdRef="Sequence_1084">
+                  <Sequence x:Key="Step-2" DisplayName="Click On View All Button" sap:VirtualizedContainerService.HintSize="418,1146" sap2010:WorkflowViewState.IdRef="Sequence_1084">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -878,7 +878,7 @@
                         </ui:WaitUiElementAppear.Target>
                       </ui:WaitUiElementAppear>
                     </Sequence>
-                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="376,383" sap2010:WorkflowViewState.IdRef="Sequence_1083">
+                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="376,138" sap2010:WorkflowViewState.IdRef="Sequence_1083">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -983,7 +983,7 @@
                       </If>
                     </Sequence>
                   </Sequence>
-                  <Sequence x:Key="Step-3" DisplayName="Select One DN From List of DN" sap:VirtualizedContainerService.HintSize="737,1702" sap2010:WorkflowViewState.IdRef="Sequence_1089">
+                  <Sequence x:Key="Step-3" DisplayName="Select One DN From List of DN" sap:VirtualizedContainerService.HintSize="737,1671" sap2010:WorkflowViewState.IdRef="Sequence_1089">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1065,7 +1065,7 @@
                         </ui:Click.Target>
                       </ui:Click>
                     </Sequence>
-                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="695,804" sap2010:WorkflowViewState.IdRef="Sequence_1088">
+                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="695,773" sap2010:WorkflowViewState.IdRef="Sequence_1088">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1612,7 +1612,7 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap2010:Annotation.AnnotationText="Add execution steps." DisplayName="Execution Steps" sap:VirtualizedContainerService.HintSize="695,1193" sap2010:WorkflowViewState.IdRef="Sequence_1102">
+                    <Sequence sap2010:Annotation.AnnotationText="Add execution steps." DisplayName="Execution Steps" sap:VirtualizedContainerService.HintSize="695,1153" sap2010:WorkflowViewState.IdRef="Sequence_1102">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1893,7 +1893,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:UiElementExists>
-                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="695,627" sap2010:WorkflowViewState.IdRef="Sequence_1518">
+                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="695,145" sap2010:WorkflowViewState.IdRef="Sequence_1518">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1982,14 +1982,14 @@
                       </If>
                     </Sequence>
                   </Sequence>
-                  <Sequence x:Key="Step-8" DisplayName="Verify On Show PE usage" sap:VirtualizedContainerService.HintSize="737,2025" sap2010:WorkflowViewState.IdRef="Sequence_1528">
+                  <Sequence x:Key="Step-8" DisplayName="Verify On Show PE usage" sap:VirtualizedContainerService.HintSize="737,1994" sap2010:WorkflowViewState.IdRef="Sequence_1528">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Sequence sap2010:Annotation.AnnotationText="Add execution steps." DisplayName="Execution Steps" sap:VirtualizedContainerService.HintSize="695,1089" sap2010:WorkflowViewState.IdRef="Sequence_1524">
+                    <Sequence sap2010:Annotation.AnnotationText="Add execution steps." DisplayName="Execution Steps" sap:VirtualizedContainerService.HintSize="695,1007" sap2010:WorkflowViewState.IdRef="Sequence_1524">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="bool_ElementExistsActivePE" />
                       </Sequence.Variables>
@@ -2190,7 +2190,7 @@
                       </If>
                     </Sequence>
                   </Sequence>
-                  <Sequence x:Key="Step-9" DisplayName="Verify Off Show PE usage" sap:VirtualizedContainerService.HintSize="737,1376" sap2010:WorkflowViewState.IdRef="Sequence_1533">
+                  <Sequence x:Key="Step-9" DisplayName="Verify Off Show PE usage" sap:VirtualizedContainerService.HintSize="737,1345" sap2010:WorkflowViewState.IdRef="Sequence_1533">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2241,7 +2241,7 @@
                         </ui:Click.Target>
                       </ui:Click>
                     </Sequence>
-                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="695,760" sap2010:WorkflowViewState.IdRef="Sequence_1532">
+                    <Sequence sap2010:Annotation.AnnotationText="Known error on same execution page. If occures then set step execution result to Failure" DisplayName="Step Verification Point Or Actual vs Expected Result" sap:VirtualizedContainerService.HintSize="695,773" sap2010:WorkflowViewState.IdRef="Sequence_1532">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2265,7 +2265,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:UiElementExists>
-                      <If sap2010:Annotation.AnnotationText="Change the condition according to verfication activity." Condition="[bool_ElementExists]" DisplayName="Check For Verification Element-Click U" sap:VirtualizedContainerService.HintSize="653,504" sap2010:WorkflowViewState.IdRef="If_489">
+                      <If sap2010:Annotation.AnnotationText="Change the condition according to verfication activity." Condition="[bool_ElementExists]" DisplayName="Check For Verification Element-Click U" sap:VirtualizedContainerService.HintSize="653,459" sap2010:WorkflowViewState.IdRef="If_489">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -2370,7 +2370,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ra:LogMessage>
-                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="700" DisplayName="Click - PE" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_223" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
+                      <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" ContinueOnError="True" DelayMS="700" DisplayName="Click - PE" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_223" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="False">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>
@@ -2389,7 +2389,7 @@
                           </ui:Target>
                         </ui:Click.Target>
                       </ui:Click>
-                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayMS="3000" DisplayName="Type Into - Insert Text here" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_78" SendWindowMessages="False" SimulateType="False" Text="[str_InputData.Trim]">
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" Activate="True" ClickBeforeTyping="True" ContinueOnError="True" DelayMS="3000" DisplayName="Type Into - Insert Text here" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="TypeInto_78" SendWindowMessages="False" SimulateType="False" Text="[str_InputData.Trim]">
                         <ui:TypeInto.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f836d555-314e-430f-a69f-bbc49e2bb011" Selector="[String.Format(&quot;&lt;html app='{0}' title='*' /&gt;&lt;webctrl aaname='Users Affected' parentid='app' tag='DIV' /&gt;&lt;nav up='2' /&gt;&lt;webctrl parentid='app' tag='DIV' class='v-input__slot' idx='2' /&gt;&quot;, BrowserAppName)]" WaitForReady="[WaitForReady.COMPLETE]">
                             <ui:Target.TimeoutMS>
